@@ -23,6 +23,7 @@ This project helps you build and deploy an API server with just a few settings.
     
 
 5. Set your database information to iotd/iotd/config.py file
+  
   5-2. If you do not want to commit the information in config.py to git, you can store the information in the environment variables of the AWS Elastic Beanstalk distribution server. If you want to save it in an environment variable, you should remove the config.py file and commit it.
 
   ​
