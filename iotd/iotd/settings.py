@@ -71,7 +71,7 @@ WSGI_APPLICATION = 'iotd.wsgi.application'
 
 # Database
 # https://docs.djangoproject.com/en/2.0/ref/settings/#databases
-if 'RDS_HOSTNAME' in os.environ:
+try:
     DATABASES = {
         'default': {
             'ENGINE': 'django.db.backends.mysql',
@@ -82,7 +82,7 @@ if 'RDS_HOSTNAME' in os.environ:
             'PORT': os.environ['RDS_PORT'],
         }
     }
-else:
+except:
     DATABASES = {
         'default': {
             'ENGINE': 'django.db.backends.mysql',
