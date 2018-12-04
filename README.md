@@ -10,7 +10,7 @@ This project helps you build and deploy an API server with just a few settings.
 
    ​
 
-2. git clone https://github.com/limdongjin/APIBuilder
+2. git clone https://github.com/limdongjin/boilerplate_drf_elasticbeanstalk
 
    ​
 
